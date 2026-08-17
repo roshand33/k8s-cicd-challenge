@@ -15,13 +15,13 @@ spec:
     spec:
       containers:
         - name: backend
-          image: roshand22/k8s-cicd-demo:latest
+          image: roshand22/k8s-cicd-demo:local
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
           env:
             - name: DB_HOST
-              value: postgres
+              value: postgres-invalid
             - name: DB_PORT
               value: "5432"
           readinessProbe:
