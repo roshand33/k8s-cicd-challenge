@@ -36,6 +36,6 @@ jobs:
         run: |
           kubectl apply -k k8s/
           kubectl -n k8s-cicd-demo set image deployment/backend \
-            backend=$IMAGE_NAME:does-not-exist
+            backend=$IMAGE_NAME:${GITHUB_SHA}
           kubectl -n k8s-cicd-demo rollout status deployment/backend \
             --timeout=120s
