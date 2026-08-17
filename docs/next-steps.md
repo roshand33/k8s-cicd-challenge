@@ -17,3 +17,4 @@ This repository is a starting scaffold. Complete the challenge in this order:
 13. Debug it using Kubernetes commands and logs.
 14. Fix the configuration and verify recovery.
 15. Record the 8–12 minute video.
+
