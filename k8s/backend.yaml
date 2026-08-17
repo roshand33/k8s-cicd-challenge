@@ -21,7 +21,7 @@ spec:
             - containerPort: 5000
           env:
             - name: DB_HOST
-              value: postgres-invalid
+              value: postgres
             - name: DB_PORT
               value: "5432"
           readinessProbe:
