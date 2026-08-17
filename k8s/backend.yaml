@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: roshand22/k8s-cicd-demo:does-not-exist
+          image: roshand22/k8s-cicd-demo:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
